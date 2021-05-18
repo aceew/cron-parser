@@ -1,5 +1,0 @@
-const requirements = {
-  minutes: {},
-  hours: {},
-  
-}
