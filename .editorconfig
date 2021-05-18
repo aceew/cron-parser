@@ -1,5 +1,6 @@
-# ts, tsx ,js ,jsx ,json & lock files in the root directory
-[*.{ts,tsx,js,jsx,json,lock}]
+root = true
+
+[*.{ts,json,lock}]
 charset = utf-8
 end_of_line = lf
 indent_style = space
