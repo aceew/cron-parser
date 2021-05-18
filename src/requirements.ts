@@ -1,0 +1,5 @@
+const requirements = {
+  minutes: {},
+  hours: {},
+  
+}

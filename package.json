@@ -1,0 +1,20 @@
+{
+  "name": "cronparser",
+  "version": "1.0.0",
+  "description": "A tool to print out the definitions of cron schedule expressions. A bit like crontab.guru but for your command line.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-run": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
