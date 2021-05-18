@@ -42,6 +42,5 @@ npm test
 ## Development TODOs
 
 * [ ] Write missing test cases. In the interest of keeping to the 3 hours, I stopped writing tests for the fine tuning
-* [ ] Support alternative values for month and dayOfWeek
 * [ ] Linting
 * [ ] Compile binary so users don't need to install dependencies etc to run the application
