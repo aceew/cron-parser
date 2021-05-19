@@ -1,32 +1,30 @@
-import { calculateValuesForCronString } from "./parser";
-import { parserValidationErrorName } from "./validation-error";
+import { calculateValuesForCronString } from './parser';
+import { parserValidationErrorName } from './validation-error';
 
-const getUsage = (error: Error) => {
-  return `
+const getUsage = (error: Error) => `
     You must pass a valid cron expression followed by a command to run.
 
     ${error.message}.
 
-    Example "*/5 * 1-10 * * /bin/find "`
-}
+    Example "*/5 * 1-10 * * /bin/find "`;
 
-const getErrorMessage = (error: Error) => {
-  return `Oops something went wrong ${error.message}`
-}
+const getErrorMessage = (error: Error) => `Oops something went wrong ${error.message}`;
 
 const main = () => {
   let result;
   try {
-    result = calculateValuesForCronString(process.argv[2])
+    result = calculateValuesForCronString(process.argv[2]);
   } catch (error) {
     if (error.name === parserValidationErrorName) {
-      return getUsage(error)
+      return getUsage(error);
     }
 
-    return getErrorMessage(error)
+    return getErrorMessage(error);
   }
 
-  const { minutes, hours, days, months, daysOfWeek, command } = result
+  const {
+    minutes, hours, days, months, daysOfWeek, command,
+  } = result;
 
   return `
     minute        ${minutes}
@@ -36,6 +34,6 @@ const main = () => {
     day of week   ${daysOfWeek}
     command       ${command}
   `;
-}
+};
 
 console.log(main());

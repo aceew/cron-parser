@@ -39,8 +39,10 @@ For each file you need to write tests for, create a .test.ts file to contain the
 npm test
 ```
 
+Before committing, make sure your code passes the linting rules by running `npm run lint`
+
 ## Development TODOs
 
 * [ ] Write missing test cases. In the interest of keeping to the 3 hours, I stopped writing tests for the fine tuning
-* [ ] Linting
+* [ ] CICD
 * [ ] Compile binary so users don't need to install dependencies etc to run the application

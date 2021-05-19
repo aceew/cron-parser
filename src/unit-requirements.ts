@@ -3,26 +3,26 @@ type UnitRequirements = {
   min: number,
   max: number,
   alternativeValueMap: Record<string, number>
-}
+};
 
 const cronUnitRequirements = {
   minutes: {
     name: 'minutes',
     min: 0,
     max: 59,
-    alternativeValueMap: {}
+    alternativeValueMap: {},
   },
   hours: {
     name: 'hours',
     min: 0,
     max: 23,
-    alternativeValueMap: {}
+    alternativeValueMap: {},
   },
   days: {
     name: 'days',
     min: 1,
     max: 31,
-    alternativeValueMap: {}
+    alternativeValueMap: {},
   },
   months: {
     name: 'months',
@@ -41,7 +41,7 @@ const cronUnitRequirements = {
       oct: 10,
       nov: 11,
       dec: 12,
-    }
+    },
   },
   daysOfWeek: {
     name: 'daysOfWeek',
@@ -55,10 +55,10 @@ const cronUnitRequirements = {
       thu: 4,
       fri: 5,
       sat: 6,
-    }
+    },
   },
-}
+};
 
-export { cronUnitRequirements }
+export { cronUnitRequirements };
 
-export type { UnitRequirements }
+export type { UnitRequirements };
